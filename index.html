@@ -424,7 +424,10 @@
         }
         .icard-body strong { color: var(--text); font-weight: 600; }
 
-        .lang-list { font-size: 14px; color: var(--text); font-weight: 600; margin-top: 4px; line-height: 1.6; }
+        .lang-list { font-size: 14px; margin-top: 4px; line-height: 1.6; }
+        .lang-row { display: flex; justify-content: space-between; align-items: center; padding: 3px 0; }
+        .lang-name { color: var(--text); font-weight: 600; }
+        .lang-level { color: var(--gold-muted); font-size: 12px; font-weight: 500; }
 
         /* ===== SKILLS ===== */
         #skills { background: var(--bg-card); }
@@ -785,7 +788,13 @@
                         <span class="icard-label">Languages</span>
                     </div>
                     <div class="icard-body">
-                        <p class="lang-list">Kurdish &nbsp;&middot;&nbsp; Arabic &nbsp;&middot;&nbsp; English &nbsp;&middot;&nbsp; Turkmani</p>
+                        <div class="lang-list">
+                            <div class="lang-row"><span class="lang-name">Kurdish</span><span class="lang-level">Native / Bilingual</span></div>
+                            <div class="lang-row"><span class="lang-name">Arabic</span><span class="lang-level">Fluent</span></div>
+                            <div class="lang-row"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+                            <div class="lang-row"><span class="lang-name">Turkmani</span><span class="lang-level">Native</span></div>
+                            <div class="lang-row"><span class="lang-name">Turkish</span><span class="lang-level">Good</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
